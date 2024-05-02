@@ -5,20 +5,32 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.bloco{
+.caixa{
     height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+    background-color: black;
+}
 
+.bloco{
+    height: 700px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+    border-radius: 40px;
+    background-color: rgb(197, 235, 200);
 }
 
 img{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 80px;
 }
 
 .logo_div{
@@ -27,5 +39,12 @@ img{
 
 .sub_titulo{
 
+    margin-bottom: 100px;
     color: gray;
+}
+
+.titulo{
+
+margin-bottom: 60px;
+
 }
