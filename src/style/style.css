@@ -1,8 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+*{ 
+    font-family: "Anton", sans-serif;
 }
 
 .caixa{
@@ -12,7 +9,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: black;
+
+    background: linear-gradient( 120deg, #520538, #090f64);
 }
 
 .bloco{
@@ -24,27 +22,65 @@
     flex-direction: column;
     border: 1px solid;
     border-radius: 40px;
-    background-color: rgb(197, 235, 200);
+    background: linear-gradient(to right, #e7c5ff, #a9d4fd, #ce3981);
+    background-size: 180% 180%;
+   
 }
 
 img{
-    width: 200px;
-    height: 200px;
-    margin-bottom: 80px;
+ 
+    width: 170px;
+    height: 170px;
+    margin-bottom: 10px;
+    border-radius: 100px;
 }
 
 .logo_div{
-    align-items: center;
+   
 }
 
 .sub_titulo{
 
-    margin-bottom: 100px;
-    color: gray;
+    margin-bottom: 20px;
+    color: rgb(46, 43, 43);
+    font-size: larger;
 }
 
 .titulo{
 
-margin-bottom: 60px;
+    margin-bottom: 4px;
 
+}
+#FullName{
+    height: 2rem;
+    width: 26rem;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    margin-bottom: 60px;
+    padding-left: 5px;
+
+}
+
+.add_technologies{
+
+    margin-bottom: 10px;
+    margin-left: 9px;
+    align-items: center;
+    color: aliceblue;
+    background-color: #b32067;
+    border-radius: 9px;
+    border: 5px solid transparent;
+    height: 40px;
+    width: 240px;
+}
+
+.register{
+    margin-bottom: 100px;
+    margin-left: 60px;
+    color: aliceblue;
+    background-color: #571edd;
+    border-radius: 9px;
+    border: 5px solid transparent;
+    height: 40px;
+    width: 150px;
 }
