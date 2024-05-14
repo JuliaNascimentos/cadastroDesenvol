@@ -1,10 +1,10 @@
-const button= document.getElementById('add_technologies')
+const button= document.getElementByIdconst button = document.getElementById('add_technologies')
 const form = document.getElementById('FullName')
 const cadastro = document.getElementById('register')
 
 let input1 = 0
 
-button_technologies.addEventListener('click', (ev) =>{
+button.addEventListener('click', (ev) =>{
 
     ev.preventDefault()
 
@@ -90,7 +90,9 @@ button_technologies.addEventListener('click', (ev) =>{
 
 })
 
-button_cadastro.addEventListener('click', (ev) =>{
+cadastro.addEventListener('click', (ev) =>{
+
+    ev.preventDefault()
     
     const name =  document.getElementById('name').value
     const tecnologia_name = document.querySelectorAll(`input[id = 'tecnologias']`)
@@ -117,6 +119,11 @@ button_cadastro.addEventListener('click', (ev) =>{
 
         console.log({name, tecnologia_name, time_tecnologias})
 
+})
+
+form.addEventListener('submit', (ev) =>{
+    ev.preventDefault
+})
 })
 
 form.addEventListener('submit', (ev) =>{
