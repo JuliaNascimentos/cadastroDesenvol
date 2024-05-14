@@ -1,4 +1,4 @@
-const button= document.getElementByIdconst button = document.getElementById('add_technologies')
+const button = document.getElementByIdconst('add_technologies')
 const form = document.getElementById('FullName')
 const cadastro = document.getElementById('register')
 
