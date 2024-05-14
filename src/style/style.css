@@ -1,10 +1,10 @@
 *{ 
+    padding: 0;
+    margin: 0;
     font-family: "Anton", sans-serif;
 }
 
-.caixa{
-    height: 100vh;
-    width: 100vw;
+body{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,17 +14,19 @@
 }
 
 .bloco{
-    height: 700px;
-    width: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    width: 70vw;
+    height: 100vh;
     border: 1px solid;
-    border-radius: 40px;
+    border-radius: 20px;
     background: linear-gradient(to right, #e7c5ff, #a9d4fd, #ce3981);
     background-size: 180% 180%;
-   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-wrap: nowrap;
 }
 
 img{
@@ -36,20 +38,40 @@ img{
 }
 
 .logo_div{
-   
+   margin-top: 50px; 
+   height: 20vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .sub_titulo{
 
-    margin-bottom: 20px;
+    position: relative;
+    top: 60px;
     color: rgb(46, 43, 43);
     font-size: larger;
 }
 
 .titulo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
 
-    margin-bottom: 4px;
+}
 
+.input1{
+    position: relative;
+    top: 70px;
+    left: 40px;
+    margin-bottom: 20px;
+}
+
+.buttond{
+    position: relative;
+    top: 90px;
 }
 #FullName{
     height: 2rem;
@@ -83,4 +105,20 @@ img{
     border: 5px solid transparent;
     height: 40px;
     width: 150px;
+}
+
+#area_de_cadastro{
+
+    border: 2px solid black;
+    margin-bottom: 30px;
+    min-height: 150px;
+    max-height: 150px;
+    
+}
+
+.section_element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
