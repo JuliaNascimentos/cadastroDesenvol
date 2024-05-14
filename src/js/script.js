@@ -8,9 +8,9 @@ button_technologies.addEventListener('click', (ev) =>{
 
     ev.preventDefault()
 
-    number_input++
+    input1++
 
-    const section_bloco = document.getElementById('bloco')
+    const section_bloco = document.getElementById('section_element')
 
     const div_remove = document.createElement('div')
 
@@ -38,40 +38,40 @@ button_technologies.addEventListener('click', (ev) =>{
 
     const sub_titulo = document.createElement('label')
     sub_titulo.innerText = 'Ano(s) de experiência'
-    sub_titulo.setAttribute('for', 'input_time' + number_input)
+    sub_titulo.setAttribute('for', 'input_time' + input1)
 
     const input_time1 = document.createElement('input')
     input_time1.type = 'radio'
-    input_time1.name = 'input_time' + number_input
-    input_time1.id ='input_time1-' + number_input
+    input_time1.name = 'input_time' + input1
+    input_time1.id ='input_time1-' + input1
     input_time1.value = '0-2 anos'
-    input_time1.className = number_input
+    input_time1.className = input1
 
     const label_time1 = document.createElement('label')
     label_time1.innerText = '0-2 anos'
-    label_time1.setAttribute('for', 'input_time1-' + number_input)
+    label_time1.setAttribute('for', 'input_time1-' + input1)
 
     const input_time2 = document.createElement('input')
     input_time2.type = 'radio'
-    input_time2.name = 'input_time' + number_input
-    input_time2.id ='input_time2-' + number_input
+    input_time2.name = 'input_time' + input1
+    input_time2.id ='input_time2-' + input1
     input_time2.value = '3-4 anos'
-    input_time2.className = number_input
+    input_time2.className = input1
 
     const label_time2 = document.createElement('label')
     label_time2.innerText = '3-4 anos'
-    label_time2.setAttribute('for', 'input_time2-' + number_input)
+    label_time2.setAttribute('for', 'input_time2-' + input1)
 
     const input_time3 = document.createElement('input')
     input_time3.type = 'radio'
-    input_time3.name = 'input_time' + number_input
-    input_time3.id ='input_time3-' + number_input
+    input_time3.name = 'input_time' + input1
+    input_time3.id ='input_time3-' + input1
     input_time3.value = '5+ anos'
-    input_time3.className = number_input
+    input_time3.className = input1
 
     const label_time3 = document.createElement('label')
     label_time3.innerText = '5+ anos'
-    label_time3.setAttribute('for', 'input_time3-' + number_input)
+    label_time3.setAttribute('for', 'input_time3-' + input1)
 
     const remove = document.createElement('button')
     remove.innerText = 'Clique aqui para remover'
@@ -85,7 +85,7 @@ button_technologies.addEventListener('click', (ev) =>{
     remove.addEventListener('click', (ev) =>{
         ev.preventDefault()
         section_bloco.removeChild(area_de_cadastro)
-        number_input--
+        input1--
     })
 
 })
@@ -105,7 +105,7 @@ button_cadastro.addEventListener('click', (ev) =>{
         alert("Verifique se todos os espaços estão preenchidos!");
     }
     else if(name.length > 0 && tecnologia_name.length > 0 && time_tecnologias.length > 0){
-        for(var i = 0; i < number_input; i++ ){
+        for(var i = 0; i < input1; i++ ){
             alert(
                 "Cadastro concluido" +
                 "\nNome do Usuário: " + name +
@@ -120,6 +120,5 @@ button_cadastro.addEventListener('click', (ev) =>{
 })
 
 form.addEventListener('submit', (ev) =>{
-    ev.preventDefault()
+    ev.preventDefault
 })
-
